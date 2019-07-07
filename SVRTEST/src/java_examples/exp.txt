@@ -1,0 +1,21 @@
+STLC
+
+test signin
+test planning
+test analysis or test designing
+test execution
+result analysis
+bug tracking
+test reporting
+regression testing
+uat
+test sign off
+
+SDlc
+requirement
+analysis
+design
+build
+testing
+delivery
+Maintenance
