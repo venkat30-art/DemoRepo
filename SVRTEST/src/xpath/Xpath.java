@@ -17,7 +17,7 @@ public class Xpath {
         
         driver.findElement(By.xpath("//iframe"));
         
-        Thread.sleep(3000);
+        Thread.sleep(6000);
         driver.close();
         
 	}
