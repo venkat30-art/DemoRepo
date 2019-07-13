@@ -15,7 +15,21 @@ public class Xpath {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         
-        driver.findElement(By.xpath("//iframe"));
+        //xpath
+        driver.findElement(By.xpath("//input[@name ='firstname']")).clear();
+        driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("venkat");
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//input[@name='lastname']")).clear();
+        driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys("singam");
+        
+        Thread.sleep(3000);
+        //css selector
+        driver.findElement(By.cssSelector("input[name='reg_email__']")).clear();
+        driver.findElement(By.cssSelector("input[name='reg_email__']")).sendKeys("ven@gmail.com");
+        Thread.sleep(3000);
+        driver.findElement(By.cssSelector("input[name='reg_passwd__']")).clear();
+        driver.findElement(By.cssSelector("input[name='reg_passwd__']")).sendKeys("123456");
+        
         
         Thread.sleep(6000);
         driver.close();

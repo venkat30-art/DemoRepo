@@ -17,7 +17,10 @@ public class Dopdownselection {
 		       Select acount_open = new Select(driver.findElement(By.id("open_account")));
 		       acount_open.selectByVisibleText("NRI Account");
 		       Thread.sleep(3000);
+		       acount_open.selectByVisibleText("Financial Learning Programmes");
+		       Thread.sleep(3000);
 		       acount_open.selectByVisibleText("Equity Relationship Service Account");
+		       Thread.sleep(3000);
 		       driver.close();
 		     	}
 
